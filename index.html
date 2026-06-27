@@ -3,91 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faculty Course Support Hub</title>
+  <title>Faculty Course Support Hub | Professor Dawn Ellis</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-  <header>
-    <h1>Professor Dawn Ellis</h1>
-    <p>Computer Science Department</p>
-
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="contact.html">Contact</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Faculty Course Support Hub home">
+      <span class="brand-mark">DE</span>
+      <span>Faculty Course Support Hub</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="contact.html">Student Support</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Welcome to the Faculty Course Support Hub</h2>
-
-      <div>
-        <p><strong>[Profile Image Placeholder]</strong></p>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Computer Science Department</p>
+        <h1>Professor Dawn Ellis</h1>
+        <p class="lede">A clear support hub for course resources, office hours, advising, and student questions.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="contact.html">Request Support</a>
+          <a class="button secondary" href="#office-hours">View Office Hours</a>
+        </div>
       </div>
-
-      <p>
-        Welcome to Professor Dawn Ellis's Faculty Course Support Hub. This site is designed
-        to help students quickly find office hours, course resources, and ways to request
-        support.
-      </p>
-
-      <p>
-        Students can use this page to learn more about the instructor, review available
-        support options, and navigate to the contact form when they need help.
-      </p>
+      <img class="hero-image" src="assets/faculty-hero.svg" alt="Illustration of a faculty workspace and campus building">
     </section>
 
-    <section>
-      <h2>Office Hours</h2>
-
-      <ul>
-        <li><strong>Monday:</strong> 10:00 AM - 12:00 PM</li>
-        <li><strong>Wednesday:</strong> 1:00 PM - 3:00 PM</li>
-        <li><strong>By Appointment:</strong> Available through the contact form</li>
-      </ul>
+    <section class="profile-grid" aria-label="Faculty page overview">
+      <article class="profile-card">
+        <h2>About This Hub</h2>
+        <p>This page gives students one reliable place to find Professor Ellis's course support information, office hours, and next steps for getting help.</p>
+      </article>
+      <article class="profile-card">
+        <h2>Courses Taught</h2>
+        <ul>
+          <li>Web Development I</li>
+          <li>Introduction to Programming</li>
+          <li>Software Design Principles</li>
+        </ul>
+      </article>
+      <article class="profile-card">
+        <h2>Student Resources</h2>
+        <p>Students can review course materials, check office hour availability, and use the support form to organize questions before reaching out.</p>
+      </article>
     </section>
 
-    <section>
-      <h2>Courses Taught</h2>
-
-      <ul>
-        <li>Web Development I</li>
-        <li>Introduction to Programming</li>
-        <li>Software Design Principles</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Student Resources</h2>
-
-      <p>
-        The following resources help students stay organized and connected throughout the semester.
-      </p>
-
-      <ul>
-        <li><a href="#">Course Materials</a></li>
-        <li><a href="#">Office Hours Information</a></li>
-        <li><a href="contact.html">Contact Form</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Need Help?</h2>
-
-      <p>
-        If you have a question about course material, assignments, or office hours, visit
-        the contact page and complete the student support form.
-      </p>
-
-      <p>
-        <a href="contact.html">Go to Contact Form</a>
-      </p>
+    <section class="details-band" id="office-hours">
+      <div>
+        <h2>Office Hours</h2>
+        <dl class="info-list">
+          <div>
+            <dt>Monday</dt>
+            <dd>10:00 AM - 12:00 PM</dd>
+          </div>
+          <div>
+            <dt>Wednesday</dt>
+            <dd>1:00 PM - 3:00 PM</dd>
+          </div>
+          <div>
+            <dt>By Appointment</dt>
+            <dd>Available through the student support form</dd>
+          </div>
+        </dl>
+      </div>
+      <div>
+        <h2>Need Help?</h2>
+        <p>If you have a question about course material, assignments, or office hours, complete the student support form with your course and message.</p>
+        <a class="button light" href="contact.html">Go to Support Form</a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Computer Science Department</p>
+  <footer class="site-footer">
+    <p>&copy; 2026 Computer Science Department. Faculty Course Support Hub prototype.</p>
   </footer>
-
 </body>
 </html>
