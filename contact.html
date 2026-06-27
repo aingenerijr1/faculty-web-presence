@@ -3,108 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Dawn Ellis</title>
+  <title>Student Support Form | Professor Dawn Ellis</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-  <header>
-    <h1>Professor Dawn Ellis</h1>
-    <p>Computer Science Department</p>
-
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="contact.html">Contact</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Faculty Course Support Hub home">
+      <span class="brand-mark">DE</span>
+      <span>Faculty Course Support Hub</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="contact.html" aria-current="page">Student Support</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Student Support Form</h2>
-
-      <p>
-        Use this form to ask a question, request office hours, or get help with
-        course material. This prototype form is for layout and demonstration
-        purposes only, so it does not submit information to a real database.
-      </p>
+    <section class="page-heading">
+      <p class="eyebrow">Student Support Request</p>
+      <h1>Contact Professor Ellis</h1>
+      <p>Use this prototype form to organize a course question, office hours request, or support need. The form does not submit or store real information.</p>
     </section>
 
-    <section>
-      <h2>Contact Information</h2>
+    <section class="form-layout">
+      <form class="interest-form" action="#" method="post">
+        <fieldset>
+          <legend>Your Information</legend>
+          <label for="student-name">Full Name</label>
+          <input id="student-name" name="student-name" type="text" placeholder="Jordan Lee">
 
-      <p>
-        Students should include their name, email address, course, reason for
-        contact, and a short message explaining what kind of support they need.
-      </p>
+          <label for="student-email">School Email</label>
+          <input id="student-email" name="student-email" type="email" placeholder="jordan.lee@school.edu">
 
-      <form action="#" method="post">
-        <div>
-          <label for="student-name">Name:</label><br>
-          <input type="text" id="student-name" name="student-name">
-        </div>
-
-        <br>
-
-        <div>
-          <label for="student-email">Email:</label><br>
-          <input type="email" id="student-email" name="student-email">
-        </div>
-
-        <br>
-
-        <div>
-          <label for="course">Course:</label><br>
+          <label for="course">Course</label>
           <select id="course" name="course">
             <option value="">Select a course</option>
             <option value="web-development">Web Development I</option>
             <option value="intro-programming">Introduction to Programming</option>
             <option value="software-design">Software Design Principles</option>
           </select>
-        </div>
+        </fieldset>
 
-        <br>
+        <fieldset>
+          <legend>Reason for Contact</legend>
+          <div class="option-grid">
+            <label><input type="checkbox" name="topic" value="assignment-help"> Assignment help</label>
+            <label><input type="checkbox" name="topic" value="office-hours"> Office hours request</label>
+            <label><input type="checkbox" name="topic" value="course-material"> Course material question</label>
+            <label><input type="checkbox" name="topic" value="other"> Other support need</label>
+          </div>
 
-        <div>
-          <label for="reason">Reason for Contact:</label><br>
-          <select id="reason" name="reason">
-            <option value="">Select a reason</option>
-            <option value="assignment-help">Assignment Help</option>
-            <option value="office-hours">Office Hours Request</option>
-            <option value="course-material">Course Material Question</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Share a short note about what kind of support you need."></textarea>
+        </fieldset>
 
-        <br>
-
-        <div>
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message" rows="6" cols="50"></textarea>
-        </div>
-
-        <br>
-
-        <button type="submit">Submit Request</button>
+        <button class="button primary form-button" type="submit">Submit Request</button>
       </form>
-    </section>
 
-    <section>
-      <h2>Next Steps</h2>
-
-      <p>
-        After submitting a real version of this form, students would expect a
-        response from the faculty member or department. In this prototype, the
-        form demonstrates how student information would be organized on the page.
-      </p>
-
-      <p>
-        <a href="index.html">Return to Homepage</a>
-      </p>
+      <aside class="contact-panel" aria-label="Contact details">
+        <h2>What to Include</h2>
+        <p><strong>Course</strong><br>Select the class connected to your question.</p>
+        <p><strong>Details</strong><br>Mention the assignment, topic, or office hours time you want to discuss.</p>
+        <p><strong>Reminder</strong><br>This prototype demonstrates layout only and does not send real messages.</p>
+      </aside>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Computer Science Department</p>
+  <footer class="site-footer">
+    <p>&copy; 2026 Computer Science Department. Student support form prototype.</p>
   </footer>
-
 </body>
 </html>
